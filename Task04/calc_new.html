@@ -11,6 +11,16 @@
             background-image: radial-gradient(rgb(205, 198, 232),rgb(243, 188, 227));
         }
         
+        div {
+            height: 200;
+            width: 100;
+            margin: 5px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px #000;
+            display: inline-block; 
+        }
+        
         input, button {
             margin-bottom: 20px;
             text-align: center;
@@ -68,11 +78,13 @@
 <body>
     <center>
         <h1 style="color: rgb(150, 28, 85)">Калькулятор</h1>
-        <input type="text" id="txtX" value="0" /> <br />
-        <input type="text" id="txtY" value="0" /> <br />
-        <button id="btnPlus" onclick="plus();">+</button>
-        <button id="btnMinus" onclick="minus();">-</button> <br />
-        <input type="text" id="txtZ" value="0" />
+        <div id="calculator">
+            <input type="text" id="txtX" value="0" /> <br />
+            <input type="text" id="txtY" value="0" /> <br />
+            <button id="btnPlus" onclick="plus();">+</button>
+            <button id="btnMinus" onclick="minus();">-</button> <br />
+            <input type="text" id="txtZ" value="0" />
+        </div>
     </center>
 </body>
 </html>
